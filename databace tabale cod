@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[ipo] (
+    [Id]         INT            IDENTITY (1, 1) NOT NULL,
+    [compnm]     NVARCHAR (MAX) NOT NULL,
+    [opendate]   NVARCHAR (MAX) NOT NULL,
+    [closedate]  NVARCHAR (MAX) NOT NULL,
+    [listdate]   NVARCHAR (MAX) NOT NULL,
+    [lotsize]    NVARCHAR (MAX) NOT NULL,
+    [allotment]  NVARCHAR (MAX) NOT NULL,
+    [listat]     NVARCHAR (MAX) NOT NULL,
+    [totalsize]  NVARCHAR (MAX) NOT NULL,
+    [creditsher] NVARCHAR (MAX) NOT NULL,
+    [refunds]    NVARCHAR (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
