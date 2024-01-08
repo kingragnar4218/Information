@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[market_news] (
+    [date]  NVARCHAR (50)  NOT NULL,
+    [newst] NVARCHAR (MAX) NOT NULL,
+    [newsd] NVARCHAR (MAX) NOT NULL
+);
