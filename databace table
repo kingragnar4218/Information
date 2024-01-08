@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[ipo] (
+    [Id]                        INT            IDENTITY (1, 1) NOT NULL,
+    [Company Name]              NVARCHAR (MAX) NOT NULL,
+    [Open Date]                 NVARCHAR (MAX) NOT NULL,
+    [Close Date]                NVARCHAR (MAX) NOT NULL,
+    [Listing Date]              NVARCHAR (MAX) NOT NULL,
+    [Lot size]                  NVARCHAR (MAX) NOT NULL,
+    [Allotmen]                  NVARCHAR (MAX) NOT NULL,
+    [Listing At]                NVARCHAR (MAX) NOT NULL,
+    [Total Issue Size]          NVARCHAR (MAX) NOT NULL,
+    [Credit of Shares to Demat] NVARCHAR (MAX) NOT NULL,
+    [Initiation of Refunds]     NVARCHAR (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
