@@ -1,0 +1,73 @@
+// back end code 
+
+protected void Button1_Click(object sender, EventArgs e)
+        {
+            int score = 0;
+
+            if(q1.SelectedItem.Value == "1")
+                score += 1;
+            if (q2.SelectedItem.Value == "2")
+                score += 1;
+            if (q3.SelectedItem.Value == "3")
+                score += 1;
+            if (q4.SelectedItem.Value == "4")
+                score += 1;
+
+            if(score >= 2)
+            {
+                Label1.Text = "your mark is : " + score.ToString() + "you pass ";
+            }
+            else
+            {
+                Label1.Text = "your mark is : " + score.ToString() + "you fail ";
+            }
+
+
+        }
+
+
+//font end cod 
+
+ <h1 align="center"> EXAM </h1><br /> <br />
+            Q1.what is ipo full form ?<br /> 
+            <asp:RadioButtonList ID="q1" runat="server">
+                <asp:ListItem Text="Initial public offering" Value="1" />
+                <asp:ListItem Text="Intraocular pressure " Value="2" />
+                <asp:ListItem Text="Indian Administrative Services" Value="3" />
+                <asp:ListItem Text=" Indian Police Service" Value="4" />
+
+            </asp:RadioButtonList><br /> <br />
+
+             Q2.what is sme full form ?<br /> 
+            <asp:RadioButtonList ID="q2" runat="server">
+                <asp:ListItem Text="Initial public offering" Value="1" />
+                <asp:ListItem Text="small and medium-sized enterprises" Value="2" />
+                <asp:ListItem Text="Indian Administrative Services" Value="3" />
+                <asp:ListItem Text=" Indian Police Service" Value="4" />
+
+            </asp:RadioButtonList>
+            <br /> <br />
+             Q3.what is sensex ?<br /> 
+            <asp:RadioButtonList ID="q3" runat="server">
+                <asp:ListItem Text="Initial public offering" Value="1" />
+                <asp:ListItem Text="Intraocular pressure " Value="2" />
+                <asp:ListItem Text="the benchmark index of the BSE in India. " Value="3" />
+                <asp:ListItem Text=" Indian Police Service" Value="4" />
+
+            </asp:RadioButtonList>
+            <br /> <br />
+            Q4.what is nifty ?<br /> 
+            <asp:RadioButtonList ID="q4" runat="server">
+                <asp:ListItem Text="Initial public offering" Value="1" />
+                <asp:ListItem Text="Intraocular pressure " Value="2" />
+                <asp:ListItem Text="the benchmark index of the BSE in India. " Value="3" />
+                <asp:ListItem Text="Nifty 100 combines the constituents of Nifty 50" Value="4" />
+
+            </asp:RadioButtonList>
+
+            <asp:Button ID="Button1" runat="server" Text="submit" OnClick="Button1_Click" />
+
+            <asp:Panel ID="Panel1" BorderWidth="5" BorderStyle="Dotted" BorderColor="Red" GroupingText="result" Font-Bold="true" runat="server">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+            </asp:Panel>
