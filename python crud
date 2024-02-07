@@ -1,0 +1,40 @@
+# python crud 
+
+import mysql.connector as mysql
+
+db = mysql.connect(    
+    host = "localhost",
+    user = "root",
+    password ="",  
+    database= "pycrud"  
+)
+
+c = db.cursor()
+
+# c.execute("create database pycrud") 
+
+#c.execute("create table stud (id int NOT NULL , name text , srname text  )")
+
+# c.execute("insert into stud values(2, 'harsh' , 'tankariya' )")
+# print("insert data ")
+# c.execute("update stud set name='parth' , srname='sata' where id=1 ")
+
+# c.execute("select * from stud ")
+# h= c.fetchall()
+# for e in h : 
+#     print(e)
+# print("data select")
+
+c.execute("delete from stud where id=2 ")
+print("deleted data ")
+
+
+
+c.execute("select * from stud ")
+h= c.fetchall()
+for e in h : 
+    print(e)
+print("data select")
+
+db.commit()
+db.close()
