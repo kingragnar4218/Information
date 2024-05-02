@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        /* Your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Change to your preferred background color */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px ;
+            padding: 20px;
+            background-color: #ffffff; /* Change to your preferred background color */
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="datetime-local"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 40px;
+        }
+
+        .container input[type="submit"],
+        .container .btn {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .container input[type="submit"]:hover,
+        .container .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h2>Form</h2>
+            <asp:Label ID="Label1" runat="server" Text="Name "></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+
+            <asp:Label ID="Label2" runat="server" Text="Date "></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" TextMode="DateTime"></asp:TextBox>
+
+            <asp:Label ID="Label3" runat="server" Text="Mobile Number"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
+
+            <asp:Label ID="Label4" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
+
+            <asp:Label ID="Label5" runat="server" Text="Address "></asp:Label>
+            <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
+
+            <asp:Button ID="Button1" runat="server" Text="Insert Data" CssClass="btn btn-primary" OnClick="Button1_Click" /><br><br>
+            <asp:Button ID="Button4" runat="server" Text="Update Data" CssClass="btn btn-success" /><br><br>
+            <asp:Button ID="Button3" runat="server" Text="Delete Data" CssClass="btn btn-danger" /><br><br>
+            <asp:Button ID="Button2" runat="server" Text="Show Data" CssClass="btn btn-info" /><br><br>
+        </div>
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+    </form>
+</body>
+</html>
