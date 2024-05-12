@@ -10,3 +10,14 @@ if n <= 0:
 else:
     print("Fibonacci sequence:")
     print(fibonacci(n))
+------------------------------------------- odd and even program ----------------------------------------------------------
+def oddeven(number):
+    if number % 2 == 0 :
+        return "even " 
+    else :
+        return "odd "
+    
+num = 10
+result = oddeven(num)
+print(num  , result   )
+
