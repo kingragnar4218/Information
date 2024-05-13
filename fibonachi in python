@@ -21,3 +21,38 @@ num = 10
 result = oddeven(num)
 print(num  , result   )
 
+------------------------------------------- prime number -----------------------------------------------------------------
+
+def prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Example usage
+number = 11
+if prime(number):
+    print(number, "is a prime number")
+else:
+    print(number, "is not a prime number")
+
+-------------------------------------------------- polindrome number ---------------------------------------------------------
+
+def is_palindrome(num):
+    # Convert the number to a string to easily reverse it
+    num_str = str(num)
+    # Reverse the string representation of the number
+    reversed_str = num_str[::-1]
+    # Check if the original and reversed strings are equal
+    return num_str == reversed_str
+
+# Test the function
+number = int(input("Enter a number: "))
+if is_palindrome(number):
+    print(number, "is a palindrome number.")
+else:
+    print(number, "is not a palindrome number.")
+
+
