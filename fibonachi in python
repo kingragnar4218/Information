@@ -101,6 +101,24 @@ for i in range (1 , r+1 ):
         print(num , end=" ")
         num += 1
     print()    
+------------------------------------- armstrong number
 
-        
+def is_armstrong(num):
+    # Count number of digits
+    num_str = str(num)
+    num_digits = len(num_str)
+    
+    # Calculate sum of digits raised to the power of number of digits
+    total = sum(int(digit) ** num_digits for digit in num_str)
+    
+    # Check if the number is Armstrong
+    return total == num
+
+# Example usage:
+number = int(input("Enter a number: "))
+if is_armstrong(number):
+    print(number, "is an Armstrong number.")
+else:
+    print(number, "is not an Armstrong number.")
+
 
