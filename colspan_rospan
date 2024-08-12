@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <table border="1">
+        <tr>
+          <th>department </th>
+          <th colspan="2">1 years </th>
+          <th colspan="2">2 years </th>
+          <th colspan="2">3 years </th>
+          <th colspan="2">4 years </th>
+        </tr>
+        <tr>
+          <td></td>
+          <td rowspan="">sem 1</td>
+          <td>sem 2</td>
+          <td>sem 3</td>
+          <td>sem 4</td>
+          <td>sem 5</td>
+          <td>sem 6</td>
+          <td>sem 7</td>
+          <td>sem 8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Computer <br>engineering </td>
+            
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>  
+          </tr>
+          
+          <tr>            
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>  
+          </tr>
+
+          <tr>
+            <td rowspan="2">Information  <br>technology </td>
+            
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td> 
+            
+            <tr>            
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>  
+              </tr>
+          </tr>
+      </table>
+      
+<h1>
+    leb 3 part b pre 3 
+</h1>
+
+
+  
+</body>
+</html>
