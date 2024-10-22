@@ -1,3 +1,4 @@
+// inserted data in collection 
 db.CUSTOMERS.insertMany([
     { CID : 1 , CustomerName: "Alfreds Futterkiste" , ContactName: "Maria Anders" ,  Address :"Obere Str. 57 " , City:"Berlin" , PostalCode:"12209" , Country:"Germany"},
     { CID : 2 , CustomerName: "Ana Trujillo Emparedados y helados" , ContactName: "Ana Trujillo " ,  Address :"Avda. de la Constitucion 2222 " , City:"Mexico D.F." , PostalCode:"05021" , Country:"Mexico"},
@@ -6,3 +7,14 @@ db.CUSTOMERS.insertMany([
     { CID : 5 , CustomerName: "Berglunds snabbkop" , ContactName: "Christina Berglund" ,  Address :"Berguvsvagen 8 " , City:"Lulea" , PostalCode:"S-958 22 " , Country:"Sweden"}
     
 ]);
+----------------------- A ------------------------------------------------
+1.=> db.CUSTOMER.find({ City : /^L.nd../})
+2.=> db.CUSTOMER.find({City:/l/i})
+3.=> db.CUSTOMER.find({City:{$not:/l/i}})
+4.=> db.CUSTOMER.find({CustomerName:/^La/i})
+5.=> db.CUSTOMER.find({CustomerName:{$not:/la/i}})
+6.=> db.CUSTOMER.find({CustomerName:{$regex:'^[AEIOUaeiou]'}})
+7.=> db.CUSTOMER.find({CustomerName:{$not:/^[AEIOUaeiou]/i}})
+8.=> db.CUSTOMER.find({CustomerName:/^[a-d , x-z]/i})
+9.=> db.CUSTOMER.find({CustomerName:{$not:/^[a-d , x-z]/i}})
+10.=> b.CUSTOMER.find({CustomerName:/^[aeiou].*[aeiou]$/i})
