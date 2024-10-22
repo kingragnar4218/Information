@@ -18,3 +18,9 @@ db.CUSTOMERS.insertMany([
 8.=> db.CUSTOMER.find({CustomerName:/^[a-d , x-z]/i})
 9.=> db.CUSTOMER.find({CustomerName:{$not:/^[a-d , x-z]/i}})
 10.=> b.CUSTOMER.find({CustomerName:/^[aeiou].*[aeiou]$/i})
+----------------------- B ------------------------------------------------
+1.=> db.CUSTOMER.find({ CustomerName : /^[a,b]/})
+2.=> db.CUSTOMER.find({ CustomerName : /^[a,b,t]/i})
+3.=> db.CUSTOMER.find({CustomerName:/^[a-d]/i})
+4.=>   db.CUSTOMER.find({CustomerName:/a$/i})
+5.=>  db.CUSTOMER.find({CustomerName:{$not:/^$a/i}})
